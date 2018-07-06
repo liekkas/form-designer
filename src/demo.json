@@ -1,0 +1,82 @@
+{
+  "objectName": "hehe",
+  "objectType": 1,
+  "showTableName": "hehe",
+  "storageTableName": "f_hehe_undefined",
+  "fields": [
+      {
+          "type": "area",
+          "groupType": "layout",
+          "label": "表单区域",
+          "textAlign": "left",
+          "children": [
+              {
+                  "type": "input",
+                  "length": 20,
+                  "minLength": 0,
+                  "isAddIndex": false,
+                  "required": false,
+                  "groupType": "text",
+                  "label": "单行文本",
+                  "placeholder": "",
+                  "value": "",
+                  "defaultValue": "",
+                  "attributeType": "varchar",
+                  "uuId": "0304cd9ab328",
+                  "columnKey": "column_6c4a"
+              },
+              {
+                  "type": "checkbox",
+                  "length": 20,
+                  "isAddIndex": false,
+                  "required": false,
+                  "groupType": "array",
+                  "label": "多选框",
+                  "arrayValue": [
+                      "选项1",
+                      "选项2",
+                      "选项3"
+                  ],
+                  "value": [],
+                  "defaultValue": "",
+                  "attributeType": "varchar",
+                  "uuId": "5b6eba8dc351",
+                  "columnKey": "column_97ce"
+              },
+              {
+                  "type": "textarea",
+                  "length": 200,
+                  "minLength": 0,
+                  "isAddIndex": false,
+                  "required": false,
+                  "groupType": "text",
+                  "label": "多行文本",
+                  "placeholder": "",
+                  "value": "",
+                  "defaultValue": "",
+                  "attributeType": "varchar",
+                  "uuId": "695ab5b1a87d",
+                  "columnKey": "column_2c09"
+              }
+          ],
+          "uuId": "85399e2d674c",
+          "columnKey": "column_d44f"
+      },
+      {
+          "type": "subForm",
+          "groupType": "layout",
+          "label": "子表单",
+          "objectName": "haha",
+          "displayType": 1,
+          "objectType": 2,
+          "textAlign": "left",
+          "bgColor": "aliceblue",
+          "showTableName": "haha",
+          "storageTableName": "sub_haha_undefined",
+          "descInfo": "",
+          "children": [],
+          "values": [],
+          "uuId": "b014365bb987"
+      }
+  ]
+}
