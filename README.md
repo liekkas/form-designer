@@ -1,21 +1,21 @@
 # form-designer
-
-> A Form desinger
+ A Form designer
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-npm install
+npm install form-designer
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+in main.js
 ```
+import iView from 'iview'
+import 'iview/dist/styles/iview.css';
+import 'form-designer/dist/form-designer.min.css';
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Vue.use(iView)
+```
+in App.vue
+```
+  import formView from 'form-designer';
+```

@@ -1,9 +1,10 @@
 {
   "name": "form-designer",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A Form desinger",
   "author": "liekkas <zjq0717@163.com>",
   "private": false,
+  "main": "dist/form-designer.min.js",
   "files": [
     "dist"
   ],

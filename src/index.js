@@ -1,5 +1,3 @@
-const formView = require('./form/formView')
-const Form = {
-  view: formView
-}
-module.exports = Form
+import formView from './form/formView';
+
+export default formView
