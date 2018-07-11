@@ -8,6 +8,9 @@
         <formView ref="form" :data="data.fields"></formView>
       </TabPane>
     </Tabs>
+    <a style="position: absolute; right: 20px; top: 12px;" href="https://github.com/liekkas/form-designer">
+      <Icon type="social-github" size="28"></Icon>
+    </a>
   </div>
 </template>
 
