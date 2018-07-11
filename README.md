@@ -57,9 +57,9 @@ export default {
 
 ## Snapshots
 ### 表单设计
-![image](https://raw.githubusercontent.com/liekkas/form-designer/master/snap/design.jpg)
+![image](https://raw.githubusercontent.com/liekkas/form-designer/master/snap/form-design.jpg)
 ### 表单呈现
-![image](https://raw.githubusercontent.com/liekkas/form-designer/master/snap/show.jpg)
+![image](https://raw.githubusercontent.com/liekkas/form-designer/master/snap/form-show.jpg)
 
 
 ## 功能
