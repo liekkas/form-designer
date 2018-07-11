@@ -26,14 +26,14 @@
               <draggable style="width: 50%;" v-model="layouts"
                       :options="layoutDragOption">
                 <div class="form-item-left" v-for="(item,i) in layouts" v-if="i%2===0" :key="i">
-                    <img :src="'/static/icons/'+item.type+'.png'" width="20">
+                    <img :src="'static/icons/'+item.type+'.png'" width="20">
                     <div style="padding: 6px;">{{item.label}}</div>
                 </div>
               </draggable>
               <draggable style="width: 50%;"  v-model="layouts"
                     :options="layoutDragOption">
                 <div class="form-item-right" v-for="(item,i) in layouts"  v-if="i%2===1" :key="i">
-                    <img :src="'/static/icons/'+item.type+'.png'" width="20">
+                    <img :src="'static/icons/'+item.type+'.png'" width="20">
                     <div style="padding: 6px;">{{item.label}}</div>
                 </div>
               </draggable>
@@ -45,14 +45,14 @@
                 <draggable style="width: 50%;" v-model="commons"
                       :options="formDragOption">
                   <div class="form-item-left" v-for="(item,i) in commons" v-if="i%2===0" :key="i">
-                      <img :src="'/static/icons/'+item.type+'.png'" width="20">
+                      <img :src="'static/icons/'+item.type+'.png'" width="20">
                       <div style="padding: 6px;">{{item.label}}</div>
                   </div>
                 </draggable>
                 <draggable style="width: 50%;"  v-model="commons"
                       :options="formDragOption">
                   <div class="form-item-right" v-for="(item,i) in commons"  v-if="i%2===1" :key="i">
-                      <img :src="'/static/icons/'+item.type+'.png'" width="20">
+                      <img :src="'static/icons/'+item.type+'.png'" width="20">
                       <div style="padding: 6px;">{{item.label}}</div>
                   </div>
                 </draggable>
@@ -64,14 +64,14 @@
               <draggable style="width: 50%;" v-model="bizs"
                       :options="formDragOption">
                 <div class="form-item-left" v-for="(item,i) in bizs" v-if="i%2===0" :key="i">
-                    <img :src="'/static/icons/'+item.type+'.png'" width="20">
+                    <img :src="'static/icons/'+item.type+'.png'" width="20">
                     <div style="padding: 6px;">{{item.label}}</div>
                 </div>
               </draggable>
               <draggable style="width: 50%;"  v-model="bizs"
                     :options="formDragOption">
                 <div class="form-item-right" v-for="(item,i) in bizs"  v-if="i%2===1" :key="i">
-                    <img :src="'/static/icons/'+item.type+'.png'" width="20">
+                    <img :src="'static/icons/'+item.type+'.png'" width="20">
                     <div style="padding: 6px;">{{item.label}}</div>
                 </div>
               </draggable>
