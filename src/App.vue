@@ -5,7 +5,7 @@
         <newForm ref="form" :data="data"/>
       </TabPane>
       <TabPane label="表单呈现" name="show">
-        <formView ref="form" :data="data"></formView>
+        <formView ref="form" :data="data.fields"></formView>
       </TabPane>
     </Tabs>
   </div>
@@ -18,11 +18,12 @@ import demo from './demo.json';
 export default {
   name: 'App',
   components: {
-    newForm, formView
+    newForm, 
+    formView
   },
   data() {
     return {
-      data: demo.fields
+      data: demo
     }
   },
 }

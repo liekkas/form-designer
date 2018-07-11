@@ -652,23 +652,7 @@ export default {
     };
   },
   mounted() {
-    const { isUpdate, data } = this.$route.params;
-    this.isUpdate = isUpdate;
-    this.flowData = this.$route.params.data;
-
-    if (isUpdate) {
-      this.fetch(data.formId);
-      this.isPublish = data.state == 1;
-    } else {
-      //初始化
-      this.curFormInfo = {
-        ...data,
-        objectName: "",
-        objectType: 2,
-        storageTableName: "",
-        showTableName: ""
-      };
-    }
+    this.init()
   },
   computed: {
     showPlaceholder() {
@@ -743,21 +727,21 @@ export default {
     init() {
       const json = this.data
       this.curFormInfo = {
-        ...result,
-        flowVersion: this.$route.params.data.flowVersion,
+        flowVersion: 1,
         storageTableName: json.storageTableName,
         showTableName: json.showTableName,
       };
       this.fields = _.filter(json.fields, v => v.type !== "subForm");
       this.subForms = _.filter(json.fields, v => v.type === "subForm");
-      this.originFormInfo = {
-        objectName: result.objectName,
-        storageTableName: json.storageTableName,
-        showTableName: json.showTableName,
-        descInfo: result.descInfo,
-        flowVersion: result.flowVersion,
-        keyName: result.keyName
-      };
+      console.log('fields is', this.fields, json);
+      // this.originFormInfo = {
+      //   objectName: result.objectName,
+      //   storageTableName: json.storageTableName,
+      //   showTableName: json.showTableName,
+      //   descInfo: result.descInfo,
+      //   flowVersion: result.flowVersion,
+      //   keyName: result.keyName
+      // };
       if (this.isUpdate) {
         this.originFields = _.cloneDeep(this.fields);
         this.originSubForms = _.cloneDeep(this.subForms);

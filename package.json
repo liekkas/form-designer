@@ -11,7 +11,8 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "gh": "node build/build.gh.js"
   },
   "dependencies": {
     "brace": "^0.11.1",

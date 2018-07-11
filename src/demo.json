@@ -1,82 +1,254 @@
 {
-  "objectName": "hehe",
-  "objectType": 1,
-  "showTableName": "hehe",
-  "storageTableName": "f_hehe_undefined",
-  "fields": [
-      {
-          "type": "area",
-          "groupType": "layout",
-          "label": "表单区域",
-          "textAlign": "left",
-          "children": [
-              {
-                  "type": "input",
-                  "length": 20,
-                  "minLength": 0,
-                  "isAddIndex": false,
-                  "required": false,
-                  "groupType": "text",
-                  "label": "单行文本",
-                  "placeholder": "",
-                  "value": "",
-                  "defaultValue": "",
-                  "attributeType": "varchar",
-                  "uuId": "0304cd9ab328",
-                  "columnKey": "column_6c4a"
-              },
-              {
-                  "type": "checkbox",
-                  "length": 20,
-                  "isAddIndex": false,
-                  "required": false,
-                  "groupType": "array",
-                  "label": "多选框",
-                  "arrayValue": [
-                      "选项1",
-                      "选项2",
-                      "选项3"
-                  ],
-                  "value": [],
-                  "defaultValue": "",
-                  "attributeType": "varchar",
-                  "uuId": "5b6eba8dc351",
-                  "columnKey": "column_97ce"
-              },
-              {
-                  "type": "textarea",
-                  "length": 200,
-                  "minLength": 0,
-                  "isAddIndex": false,
-                  "required": false,
-                  "groupType": "text",
-                  "label": "多行文本",
-                  "placeholder": "",
-                  "value": "",
-                  "defaultValue": "",
-                  "attributeType": "varchar",
-                  "uuId": "695ab5b1a87d",
-                  "columnKey": "column_2c09"
-              }
-          ],
-          "uuId": "85399e2d674c",
-          "columnKey": "column_d44f"
-      },
-      {
-          "type": "subForm",
-          "groupType": "layout",
-          "label": "子表单",
-          "objectName": "haha",
-          "displayType": 1,
-          "objectType": 2,
-          "textAlign": "left",
-          "bgColor": "aliceblue",
-          "showTableName": "haha",
-          "storageTableName": "sub_haha_undefined",
-          "descInfo": "",
-          "children": [],
-          "values": [],
-          "uuId": "b014365bb987"
-      }
-  ]
+    "storageTableName": "f_undefined_undefined",
+    "fields": [
+        {
+            "type": "area",
+            "groupType": "layout",
+            "label": "基本信息",
+            "textAlign": "left",
+            "children": [
+                {
+                    "type": "staff",
+                    "groupType": "biz",
+                    "label": "人员信息",
+                    "placeholder": "",
+                    "index": 0,
+                    "fields": [
+                        {
+                            "type": "input",
+                            "length": 20,
+                            "minLength": 0,
+                            "isAddIndex": false,
+                            "required": false,
+                            "groupType": "text",
+                            "label": "姓名",
+                            "placeholder": "",
+                            "value": "",
+                            "defaultValue": "",
+                            "attributeType": "varchar",
+                            "uuId": "6c281b4ddb8a",
+                            "columnKey": "column_4517"
+                        },
+                        {
+                            "type": "input",
+                            "length": 20,
+                            "minLength": 0,
+                            "isAddIndex": false,
+                            "required": false,
+                            "groupType": "text",
+                            "label": "手机号",
+                            "placeholder": "",
+                            "value": "",
+                            "defaultValue": "",
+                            "attributeType": "varchar",
+                            "uuId": "6c99e19603f8",
+                            "columnKey": "column_2a5a"
+                        },
+                        {
+                            "type": "input",
+                            "length": 20,
+                            "minLength": 0,
+                            "isAddIndex": false,
+                            "required": false,
+                            "groupType": "text",
+                            "label": "部门",
+                            "placeholder": "",
+                            "value": "",
+                            "defaultValue": "",
+                            "attributeType": "varchar",
+                            "uuId": "6d0a9e33e9ad",
+                            "columnKey": "column_60d1"
+                        },
+                        {
+                            "type": "input",
+                            "length": 20,
+                            "minLength": 0,
+                            "isAddIndex": false,
+                            "required": false,
+                            "groupType": "text",
+                            "label": "职位",
+                            "placeholder": "",
+                            "value": "",
+                            "defaultValue": "",
+                            "attributeType": "varchar",
+                            "uuId": "12f58fb5c8fc",
+                            "columnKey": "column_2527"
+                        }
+                    ],
+                    "uuId": "9a353545c32a",
+                    "columnKey": "column_ca69"
+                },
+                {
+                    "type": "radio",
+                    "length": 20,
+                    "isAddIndex": false,
+                    "required": false,
+                    "groupType": "array",
+                    "label": "报销类型",
+                    "arrayValue": [
+                        "通信",
+                        "交通",
+                        "餐饮"
+                    ],
+                    "value": "通信",
+                    "defaultValue": "",
+                    "attributeType": "varchar",
+                    "uuId": "b58b85e673dc",
+                    "columnKey": "column_088e"
+                },
+                {
+                    "type": "textarea",
+                    "length": 200,
+                    "minLength": 0,
+                    "isAddIndex": false,
+                    "required": false,
+                    "groupType": "text",
+                    "label": "说明",
+                    "placeholder": "",
+                    "value": "",
+                    "defaultValue": "",
+                    "attributeType": "varchar",
+                    "uuId": "0d29552d3ae1",
+                    "columnKey": "column_8641"
+                }
+            ],
+            "uuId": "63cef92fe6be",
+            "columnKey": "column_6ca5"
+        },
+        {
+            "type": "subForm",
+            "groupType": "layout",
+            "label": "子表单",
+            "objectName": "详情单",
+            "displayType": 2,
+            "objectType": 2,
+            "textAlign": "left",
+            "bgColor": "aliceblue",
+            "showTableName": "",
+            "storageTableName": "sub__undefined",
+            "descInfo": "",
+            "children": [
+                {
+                    "type": "input",
+                    "length": 20,
+                    "minLength": 0,
+                    "isAddIndex": false,
+                    "required": false,
+                    "groupType": "text",
+                    "label": "发生地",
+                    "placeholder": "",
+                    "value": "",
+                    "defaultValue": "",
+                    "attributeType": "varchar",
+                    "uuId": "ec1e1634a709",
+                    "columnKey": "column_dd78"
+                },
+                {
+                    "type": "date",
+                    "label": "发生时间",
+                    "isAddIndex": false,
+                    "required": false,
+                    "placeholder": "请选择日期",
+                    "value": "",
+                    "defaultValue": "",
+                    "attributeType": "datetime",
+                    "uuId": "2a839ef82294",
+                    "columnKey": "column_f9bc"
+                },
+                {
+                    "type": "number",
+                    "length": 20,
+                    "isAddIndex": false,
+                    "required": false,
+                    "groupType": "text",
+                    "label": "金额",
+                    "placeholder": "",
+                    "value": 0,
+                    "defaultValue": 0,
+                    "attributeType": "int",
+                    "uuId": "fba7261ea02f",
+                    "columnKey": "column_dfc9"
+                },
+                {
+                    "type": "input",
+                    "length": 20,
+                    "minLength": 0,
+                    "isAddIndex": false,
+                    "required": false,
+                    "groupType": "text",
+                    "label": "备注",
+                    "placeholder": "",
+                    "value": "",
+                    "defaultValue": "",
+                    "attributeType": "varchar",
+                    "uuId": "0d8089571ed8",
+                    "columnKey": "column_f2b2"
+                }
+            ],
+            "values": [
+                {
+                    "fields": [
+                        {
+                            "type": "input",
+                            "length": 20,
+                            "minLength": 0,
+                            "isAddIndex": false,
+                            "required": false,
+                            "groupType": "text",
+                            "label": "发生地",
+                            "placeholder": "",
+                            "value": "",
+                            "defaultValue": "",
+                            "attributeType": "varchar",
+                            "uuId": "ec1e1634a709",
+                            "columnKey": "column_dd78"
+                        },
+                        {
+                            "type": "date",
+                            "label": "发生时间",
+                            "isAddIndex": false,
+                            "required": false,
+                            "placeholder": "请选择日期",
+                            "value": "",
+                            "defaultValue": "",
+                            "attributeType": "datetime",
+                            "uuId": "2a839ef82294",
+                            "columnKey": "column_f9bc"
+                        },
+                        {
+                            "type": "number",
+                            "length": 20,
+                            "isAddIndex": false,
+                            "required": false,
+                            "groupType": "text",
+                            "label": "金额",
+                            "placeholder": "",
+                            "value": 0,
+                            "defaultValue": 0,
+                            "attributeType": "int",
+                            "uuId": "fba7261ea02f",
+                            "columnKey": "column_dfc9"
+                        },
+                        {
+                            "type": "input",
+                            "length": 20,
+                            "minLength": 0,
+                            "isAddIndex": false,
+                            "required": false,
+                            "groupType": "text",
+                            "label": "备注",
+                            "placeholder": "",
+                            "value": "",
+                            "defaultValue": "",
+                            "attributeType": "varchar",
+                            "uuId": "0d8089571ed8",
+                            "columnKey": "column_f2b2"
+                        }
+                    ],
+                    "uuId": "27af935d46be"
+                }
+            ],
+            "uuId": "f16389b97695"
+        }
+    ]
 }
