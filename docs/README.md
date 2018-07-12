@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: $withBase('/hero.jpg')
+heroImage: /hero.jpg
 actionText: 快速上手 →
 actionLink: /guide/
 features:
